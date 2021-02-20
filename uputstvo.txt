@@ -1,0 +1,33 @@
+
+Prva strana rada je "index.php". Ona predstavlja stranu za logovanje na sajt poslasticarnice "Sweeterland". 
+Ima polja za unos korisnickog imena i lozinke koja su propracena proverom unosa, i u slucaju da jedno od dva nije uneto izbacuje se alert.
+Pored toga sadrzi dva dugmeta ("log in" i "napravi nalog"). Prilikom klika na dugme "log in" vrsi se provera da li u bazi "sweeterladn" postoji korisnik sa datim korisnickim imenom i datom lozinkom.
+Ukoliko se korisnik nalazi u bazi on biva preusmeren na stranicu "pocetna.php" i zapocinje se sesija. 
+Prilikom klika na dugme "napravi nalog" korisnik biva preusmeren na stranicu "novi_profil.php".
+
+Na stranici "novi_profil.php" se nalaze dva polja identicna onim na prethodnoj stranici, kao i primeri za input kontrolu tipa checbox, radio, number, textarea, color,reset i submit. 
+Klikom na dugme "Napravi nalog" kreira se novi korisnicki nalog koji biva unet u bazu podataka.
+Korisnik biva preusmeren na stranicu "jelkica.php" na kojoj se nalazi jedno dugme i pozdrav korisniku cije je ime preneto preko kolacica, kao i ispis nekih podataka koje je prethodno odabrao.
+Klikom na dugme pokrece se f-ja "jelkica()" koja na osnovu broja koji je korisnik prethodno odabrao pravi jelkicu (broj redova u jednom spratu jelkice jednak je tom broju; taj broj je ogranicen radi lepseg prikaza), zeli se dobrodoslica korisniku i pojavljuje se dugme "nastavi".
+Boja pozadine odgovara boji koju je korisnik odabrao.
+Klikom na dugme "nastavi" prelazi se na stranicu "pocetna.php".
+
+U sve dalje stranice ukljucene su stranice "header.php" i "footer.html".
+
+U okviru zaglavlja nalaze se naziv poslasticarnice i linkovi ka stranicama "pocetna.php", "ponuda.php", "kontakt.php", "moja korpa" i dugme "Izloguj me".
+Klikom na "ponuda.php" otvara se padajuci meni koji sadrzi linkove ka: "pica.php", "kolaci.php" i "kapkejk.php".
+Na uredjajima sa ekranima sirine manje od 1035px umesto navedenih linkova prikazuje se ikonica. Klikom na nju otvara se padajuci meni koji prikazuje date linkove.
+Zumiranje je onesposobljeno radi ocuvanja izgleda zaglavlja.
+
+Na stranicama "pica.php", "kolaci.php" i "kapkejk.php" nalaze se slike proizvoda, njihovi nazivi, cene i dugme "DODAJ U KORPU".
+Klikom na "DODAJ U KORPU" preko broja koji predsavlja vrednost kliknutog dugmeta pronalazi se odabrani proizvod u bazi podataka i dodaje se u kolonu "korpa" kod korisnika koji je kliknuo na dugme.
+
+Klikom na dugme "Izloguj me" sesija se zavrsava i korisnik biva preusmeren na stranicu za logovanje.
+
+Na stranici "pocetna.php" nalazi se polje za unos teksta. Nakon unosa i klika na dugme pored aktivira se alert a zatim se ispisuje uneti tekst u okviru stranice.
+Ovo demonstrira rad sa ajax upitima.
+Takodje se tu nalazi dugme "izbrisi moj profil" koje brise iz baze profil korisnika koji je ulogovan i vraca ga na stranicu za logovanje.
+
+Klikom na dugme "Moja korpa" korisnik biva preusmeren na stranicu na kojoj se ispisuje sadrzaj njegove korpe kao i ukupna cena korpe.
+
+NAPOMENA: putanja do slika je stavljena sa pretpostavkom da se sadrzaj foldera MN15093 nece raspakivati u htdocs! 
